@@ -5,8 +5,11 @@ wajig:
   pkg.installed:
     - name: {{ wajig.pkg }}
 
-debsums:
+wajig-packages:
   pkg.installed:
-
-apt-show-versions:
-  pkg.installed:
+    - pkgs:
+      - apt-move
+      - apt-show-versions
+      - dctrl-tools
+      - deborphan
+      - debsums
