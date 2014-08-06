@@ -1,11 +1,12 @@
 
-{% from "template/map.jinja" import template with context %}
+{% from "wajig/map.jinja" import wajig with context %}
 
-template:
-  pkg:
-    - installed
-    - name: {{ template.pkg }}
-  service:
-    - running
-    - name: {{ template.service }}
-    - enable: True
+wajig:
+  pkg.installed:
+    - name: {{ wajig.pkg }}
+
+debsums:
+  pkg.installed:
+
+apt-show-versions:
+  pkg.installed:

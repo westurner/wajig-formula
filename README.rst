@@ -21,5 +21,4 @@ Available states
 ``wajig``
 -------------------------------------
 
-Installs the wajig package,
-and starts the associated wajig service.
+Installs the wajig package and a few recommended dependencies.
